@@ -1,18 +1,23 @@
 #autor:carlos ruben potrero corona
 #fecha:14_ agosto_ 2018
-#actividad:trabajo paran un 10 xdxdxdxd  
+#actividad:trabajo para un 8 xdxdxdxd  
 
-P=input("dame un numero : ")
-S=12
-A=2
-while not S=0: 
- while P<S :
-  if P%2==0:
-	P=P+1
- if  A<S-1:  
- A=A+1
- R=S%A
- if R==0:
-    P=0     	
-if P==1:
+
+def isPrimefor(num):  
+    if num<2:
+       flag=False
+    elif num==2:
+       flag=True
+    else:
+      flag=True
+      for i in range (2, num-1/2):
+         if num%i==0: 
+            flag=False
+            break
+    return flag
+p=input ("dame un numero: ")
+if isPrimefor(p):
+   print("el numero es primo")
+else:
+   print ("el numero no es primo")
 
